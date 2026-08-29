@@ -1,0 +1,97 @@
+body {
+    font-family: Arial;
+    background: #f5e6ff;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+h1 {
+    color: #7b4f8e;
+}
+
+button {
+    padding: 15px;
+    margin: 8px;
+    border: none;
+    border-radius: 15px;
+    background: #ead7f5;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    display: none;
+    background: #f9f3fc;
+    border-radius: 15px;
+}
+
+const moods = {
+
+    happy: {
+        title: "😊 Keep Smiling!",
+        quote: "Happiness grows when you enjoy the little things.",
+        activity: "🎧 Listen to your favourite song and share your happiness!"
+    },
+
+    sad: {
+        title: "😔 Be gentle with yourself.",
+        quote: "Even difficult days eventually pass.",
+        activity: "🌿 Take a peaceful break and talk to someone you trust."
+    },
+
+    tired: {
+        title: "😴 You deserve rest!",
+        quote: "Rest is never wasted.",
+        activity: "☕ Have your favourite drink and relax."
+    },
+
+    excited: {
+        title: "🤩 Use your energy!",
+        quote: "Turn your excitement into a beautiful memory.",
+        activity: "🎨 Try something creative today!"
+    },
+
+    stressed: {
+        title: "😤 Take it one step at a time.",
+        quote: "You don't have to do everything at once.",
+        activity: "🌿 Take a short break and focus on one task."
+    },
+
+    bored: {
+        title: "😐 Let's make today interesting!",
+        quote: "Boredom can be the beginning of creativity.",
+        activity: "✍️ Try drawing, writing, or learning something new!"
+    }
+
+};
+
+
+function showMood(mood) {
+
+    document.getElementById("result").style.display = "block";
+
+    document.getElementById("title").innerText =
+        moods[mood].title;
+
+    document.getElementById("quote").innerText =
+        moods[mood].quote;
+
+    document.getElementById("activity").innerText =
+        moods[mood].activity;
+
+}
+
