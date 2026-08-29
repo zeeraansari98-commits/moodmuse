@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MoodMuse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>✨ MoodMuse</h1>
+        <p>How are you feeling today?</p>
+
+        <div class="moods">
+            <button onclick="showMood('happy')">😊 Happy</button>
+            <button onclick="showMood('sad')">😔 Sad</button>
+            <button onclick="showMood('tired')">😴 Tired</button>
+            <button onclick="showMood('excited')">🤩 Excited</button>
+            <button onclick="showMood('stressed')">😤 Stressed</button>
+            <button onclick="showMood('bored')">😐 Bored</button>
+        </div>
+
+        <div id="result">
+            <h2 id="title"></h2>
+            <p id="quote"></p>
+            <h3>Your perfect mood-day 🌷</h3>
+            <p id="activity"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
